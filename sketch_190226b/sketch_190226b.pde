@@ -1,13 +1,8 @@
  PImage pepperoni;
  int x;
  int y;
-void setup (){
-  minim = new Minim(this);
-  sound = minim.loadFile("meat slap");
-  import ddf.minim.*;    
-Minim minim;    
-AudioPlayer sound;    
-  
+void setup (){   
+ 
   size(600,600);
   pepperoni = loadImage("pepperoni.png");
      pepperoni.resize(45,45);
@@ -21,13 +16,13 @@ AudioPlayer sound;
 
 
 void draw (){
-  
+
+
   PImage olive = loadImage("olive.png");
   olive.resize(35,35);
   image(olive, 320,230);
   
 if(mousePressed){
-
   image(pepperoni,mouseX ,mouseY);
   image(olive,mouseX,mouseY);
 }}
